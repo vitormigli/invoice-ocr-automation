@@ -1,0 +1,274 @@
+{
+  "summary": {
+    "n_documents": 20,
+    "field_accuracy_on_clean_docs": 1.0,
+    "routing_precision": 1.0,
+    "routing_recall": 1.0,
+    "routing_confusion": {
+      "true_positive_flagged_for_review": 9,
+      "false_positive_flagged_for_review": 0,
+      "true_negative_approved": 11,
+      "false_negative_wrongly_approved": 0
+    }
+  },
+  "rows": [
+    {
+      "image": "invoice_2001.png",
+      "expected_valid": true,
+      "route": "aprovado",
+      "fields": {
+        "numero_nota": "77864",
+        "cnpj_emitente": "90.568.742/0001-00",
+        "valor_total": 157.26,
+        "data_emissao": "19/09/2026"
+      },
+      "reasons": []
+    },
+    {
+      "image": "invoice_2002.png",
+      "expected_valid": true,
+      "route": "aprovado",
+      "fields": {
+        "numero_nota": "96353",
+        "cnpj_emitente": "08.567.491/0001-69",
+        "valor_total": 52.05,
+        "data_emissao": "30/08/2026"
+      },
+      "reasons": []
+    },
+    {
+      "image": "invoice_2003.png",
+      "expected_valid": true,
+      "route": "aprovado",
+      "fields": {
+        "numero_nota": "15780",
+        "cnpj_emitente": "18.326.705/0001-69",
+        "valor_total": 3579.83,
+        "data_emissao": "24/11/2025"
+      },
+      "reasons": []
+    },
+    {
+      "image": "invoice_2004.png",
+      "expected_valid": true,
+      "route": "aprovado",
+      "fields": {
+        "numero_nota": "69753",
+        "cnpj_emitente": "80.329.417/0001-31",
+        "valor_total": 75.55,
+        "data_emissao": "21/11/2025"
+      },
+      "reasons": []
+    },
+    {
+      "image": "invoice_2005.png",
+      "expected_valid": true,
+      "route": "aprovado",
+      "fields": {
+        "numero_nota": "60031",
+        "cnpj_emitente": "70.139.648/0001-29",
+        "valor_total": 117.2,
+        "data_emissao": "21/12/2025"
+      },
+      "reasons": []
+    },
+    {
+      "image": "invoice_2006.png",
+      "expected_valid": true,
+      "route": "aprovado",
+      "fields": {
+        "numero_nota": "73725",
+        "cnpj_emitente": "86.150.294/0001-53",
+        "valor_total": 1996.82,
+        "data_emissao": "25/12/2025"
+      },
+      "reasons": []
+    },
+    {
+      "image": "invoice_2007.png",
+      "expected_valid": true,
+      "route": "aprovado",
+      "fields": {
+        "numero_nota": "27565",
+        "cnpj_emitente": "31.674.285/0001-70",
+        "valor_total": 3895.51,
+        "data_emissao": "24/06/2026"
+      },
+      "reasons": []
+    },
+    {
+      "image": "invoice_2008.png",
+      "expected_valid": true,
+      "route": "aprovado",
+      "fields": {
+        "numero_nota": "19776",
+        "cnpj_emitente": "28.607.341/0001-49",
+        "valor_total": 2742.31,
+        "data_emissao": "10/09/2026"
+      },
+      "reasons": []
+    },
+    {
+      "image": "invoice_2009.png",
+      "expected_valid": true,
+      "route": "aprovado",
+      "fields": {
+        "numero_nota": "36679",
+        "cnpj_emitente": "42.605.813/0001-55",
+        "valor_total": 3166.1,
+        "data_emissao": "19/05/2026"
+      },
+      "reasons": []
+    },
+    {
+      "image": "invoice_2010.png",
+      "expected_valid": true,
+      "route": "aprovado",
+      "fields": {
+        "numero_nota": "19239",
+        "cnpj_emitente": "27.815.436/0001-95",
+        "valor_total": 4464.05,
+        "data_emissao": "22/08/2026"
+      },
+      "reasons": []
+    },
+    {
+      "image": "invoice_2011.png",
+      "expected_valid": false,
+      "route": "revisao_manual",
+      "fields": {
+        "numero_nota": "68943",
+        "cnpj_emitente": null,
+        "valor_total": 2736.11,
+        "data_emissao": "02/06/2026"
+      },
+      "reasons": [
+        "campo ausente: cnpj_emitente"
+      ]
+    },
+    {
+      "image": "invoice_2012.png",
+      "expected_valid": false,
+      "route": "revisao_manual",
+      "fields": {
+        "numero_nota": "13636",
+        "cnpj_emitente": null,
+        "valor_total": 2392.22,
+        "data_emissao": "11/08/2026"
+      },
+      "reasons": [
+        "campo ausente: cnpj_emitente"
+      ]
+    },
+    {
+      "image": "invoice_2013.png",
+      "expected_valid": false,
+      "route": "revisao_manual",
+      "fields": {
+        "numero_nota": "56728",
+        "cnpj_emitente": "60.972.341/0001-50",
+        "valor_total": 4150.07,
+        "data_emissao": null
+      },
+      "reasons": [
+        "campo ausente: data_emissao"
+      ]
+    },
+    {
+      "image": "invoice_2014.png",
+      "expected_valid": false,
+      "route": "revisao_manual",
+      "fields": {
+        "numero_nota": "42333",
+        "cnpj_emitente": null,
+        "valor_total": 2940.41,
+        "data_emissao": "31/03/2026"
+      },
+      "reasons": [
+        "campo ausente: cnpj_emitente"
+      ]
+    },
+    {
+      "image": "invoice_2015.png",
+      "expected_valid": false,
+      "route": "revisao_manual",
+      "fields": {
+        "numero_nota": null,
+        "cnpj_emitente": "10.256.834/0001-16",
+        "valor_total": 431.15,
+        "data_emissao": "26/06/2026"
+      },
+      "reasons": [
+        "campo ausente: numero_nota"
+      ]
+    },
+    {
+      "image": "invoice_2016.png",
+      "expected_valid": true,
+      "route": "aprovado",
+      "fields": {
+        "numero_nota": "97721",
+        "cnpj_emitente": "78.456.029/0001-70",
+        "valor_total": 4326.28,
+        "data_emissao": "18/10/2025"
+      },
+      "reasons": []
+    },
+    {
+      "image": "invoice_2017.png",
+      "expected_valid": false,
+      "route": "revisao_manual",
+      "fields": {
+        "numero_nota": "27104",
+        "cnpj_emitente": "37.562.418/0001-00",
+        "valor_total": null,
+        "data_emissao": "16/10/2025"
+      },
+      "reasons": [
+        "campo ausente: valor_total"
+      ]
+    },
+    {
+      "image": "invoice_2018.png",
+      "expected_valid": false,
+      "route": "revisao_manual",
+      "fields": {
+        "numero_nota": "70882",
+        "cnpj_emitente": "82.035.497/0001-48",
+        "valor_total": 680.73,
+        "data_emissao": null
+      },
+      "reasons": [
+        "campo ausente: data_emissao"
+      ]
+    },
+    {
+      "image": "invoice_2019.png",
+      "expected_valid": false,
+      "route": "revisao_manual",
+      "fields": {
+        "numero_nota": "21261",
+        "cnpj_emitente": "23.716.598/0001-15",
+        "valor_total": 3955.2,
+        "data_emissao": null
+      },
+      "reasons": [
+        "campo ausente: data_emissao"
+      ]
+    },
+    {
+      "image": "invoice_2020.png",
+      "expected_valid": false,
+      "route": "revisao_manual",
+      "fields": {
+        "numero_nota": "82221",
+        "cnpj_emitente": "92.736.854/0001-59",
+        "valor_total": 3116.48,
+        "data_emissao": null
+      },
+      "reasons": [
+        "campo ausente: data_emissao"
+      ]
+    }
+  ]
+}

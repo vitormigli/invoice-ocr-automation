@@ -1,0 +1,21 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - paddlex-cache:/root/.paddlex
+
+  watcher:
+    build: .
+    command: >
+      uv run python -c
+      "from pathlib import Path; from invoice_automation.watcher import watch;
+      watch(Path('data/inbox'), Path('data/processed'), Path('data/notifications'), Path('data/ledger.csv'))"
+    volumes:
+      - ./data:/app/data
+      - paddlex-cache:/root/.paddlex
+
+volumes:
+  paddlex-cache:
